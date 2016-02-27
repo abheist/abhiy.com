@@ -1,0 +1,190 @@
+// bower:scss
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+@font-face {
+    font-family: sansRegular;
+    src: url(../fonts/PT_Sans/PT_Sans-Web-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+    font-family: sansRegular;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    font-family: sansRegular;
+    font-size: 13px;
+    line-height: 12px;
+}
+
+.inner-header-1 {
+    flex: 3;
+}
+
+.inner-header-2 {
+    flex: 1;
+}
+
+.main-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.main-logo-inner {
+    width: 100%;
+    height: 70px;
+    background: url(/images/abhiy-logo.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inner-header-3 {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    a {
+        color: #787878;
+    }
+    a:hover {
+        color: #d1d1d1;
+    }
+}
+
+.inner-header-4 {
+    display: none;
+}
+
+.mobile-nav {
+    display: flex;
+    height: 40px;
+    box-shadow: 0px 5px 5px #d1d1d1;
+    display: none;
+}
+
+.mob-nav {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+}
+
+.navEmpty {
+    flex: 2;
+}
+
+.nav {
+    align-self: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+.container {
+    position: fixed;
+    border: 7px solid #eeeeee;
+    width: 93%;
+    margin-left: 3.5%;
+    height: calc(100vh - 105px);
+    font-size: 13px;
+}
+
+.leftLine {
+    display: flex;
+    width: calc(100vh - 70px);
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    margin-top: calc(100vh - 105px);
+    margin-left: 5%;
+    // margin-left: -220px;
+    left: 0%;
+    position: fixed;
+    color: #787878;
+    a {
+        color: #787878;
+    }
+    a:hover {
+        color: #d1d1d1;
+    }
+}
+
+.leftAbout1 {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconrotate {
+    transform: rotate(90deg);
+}
+
+.leftAbout2 {
+    flex: 2;
+    display: flex;
+}
+
+.thinLine {
+    width: 100%;
+    height: 1px;
+    background: #d1d1d1;
+    align-self: center;
+}
+
+.leftAbout3 {
+    flex: 5;
+    text-align: center;
+}
+
+.leftAbout4 {
+    flex: 4;
+}
+
+@media all and (max-width: 500px) {
+    .container {
+        border: 0;
+    }
+    .inner-header-3 {
+        display: none;
+    }
+    .inner-header-4 {
+        display: block;
+        flex: 3;
+        font-size: 17px;
+        text-align: center;
+        align-self: center;
+        a {
+            color: #787878;
+        }
+        a:hover {
+            color: #d1d1d1;
+        }
+    }
+    .header {
+        border-bottom: 2px solid #d1d1d1;
+    }
+    .leftLine {
+        margin-top: 86vh;
+    }
+    .leftAbout2 {
+        display: none;
+    }
+    .leftAbout1 {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+        a {
+            color: #787878;
+        }
+    }
+}
