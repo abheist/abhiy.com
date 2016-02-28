@@ -151,7 +151,7 @@ body {
     background-position: 25%;
 }
 
-.please-line    {
+.please-line {
     position: fixed;
     width: calc(100vh - 40vh);
     // background: green;
@@ -163,6 +163,26 @@ body {
     font-size: 16px;
     color: #989898;
 }
+
+
+
+.inner-foreground   {
+    width: 100%;
+}
+
+
+.featured   {
+    // background: red;
+    // height: 100px;
+    width: 400px;
+    margin-left: 65%;
+    position: fixed;
+    margin-top: 77px;
+}
+
+
+
+
 
 
 
