@@ -2,7 +2,7 @@
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 @font-face {
-    font-family: sansRegular;
+    font-family: sans;
     src: url(../fonts/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
@@ -18,4 +18,125 @@
 
 a {
     text-decoration: none;
+}
+
+body {
+    font-family: sans;
+    color: #474747;
+}
+
+.background-container {
+    height: 100vh;
+    width: 93%;
+    // position: fixed;
+    margin-left: 3.5%;
+}
+
+.background-container header {
+    height: 70px;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.flex-5 {
+    flex: 5;
+}
+
+.flex-6 {
+    flex: 6;
+}
+
+.flex-7 {
+    flex: 7;
+}
+
+.flex-8 {
+    flex: 8;
+}
+
+.flex-9 {
+    flex: 9;
+}
+
+.flex-10 {
+    flex: 10;
+}
+
+.align-self {
+    align-self: center;
+}
+
+.abhiy-logo {
+    background: url(/images/abhiy-logo.png);
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+
+.background-container header div:last-child a {
+    flex: 1;
+    align-self: center;
+    font-size: 14px;
+}
+
+.background-container section {
+    border: 7px solid #EEEEEE;
+    // box-shadow: 0px 0px 5px #EEEEEE;
+    height: calc(100vh - 154px);
+}
+
+.side-line {
+    color: #9B9B9B;
+    font-size: 14px;
+    text-align: center;
+    width: calc(100vh - 20px);
+    margin-top: calc(100vh - 90px);
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    margin-left: 30px;
+    position: fixed;
+}
+
+.side-line div:first-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+.side-line:first-child a i {
+    transform: rotate(90deg);
+    color: #9B9B9B;
+}
+
+.side-line:first-child a i:hover {
+    transform: rotate(90deg);
+    color: #EEEEEE;
+}
+
+.thin-line {
+    height: 1px;
+    width: 100%;
+    background: #EEEEEE;
 }
