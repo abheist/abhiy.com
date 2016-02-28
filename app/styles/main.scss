@@ -79,12 +79,16 @@ body {
     text-align: center;
     width: 100%;
     z-index: 99;
-    background: rgba(255, 212, 0, 0.5);
+    // background: rgba(255, 212, 0, 0.97);
+    // background: #324D5B;
+    background: white;
+    // color: #324D5B
     height: calc(100% - 70px);
     font-size: 30px;
     display: none;
     a {
-        color: white;
+        // color: white;
+        color: #324D5B;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.09);
     }
 }
@@ -241,7 +245,7 @@ body {
         border: 0;
         width: 100%;
         margin: 0px;
-        min-height: 100%;
+        min-height: 110vh;
     }
     .inner-header-3 {
         display: none;
@@ -303,8 +307,8 @@ button:active {
     display: none;
 }
 
-@media all and (max-width: 500px)   {
-    .menu-icon-wrapper  {
+@media all and (max-width: 500px) {
+    .menu-icon-wrapper {
         display: block;
     }
 }
@@ -365,14 +369,13 @@ button:active {
     cursor: default;
 }
 
-
-.inner-container    {
+.inner-container {
     width: 100%;
     height: 100%;
     display: flex;
 }
 
-.left-inner-container   {
+.left-inner-container {
     height: 100%;
     flex: 2;
     background: url(/images/me5.png);
@@ -381,15 +384,15 @@ button:active {
     background-position: center;
 }
 
-
-.right-inner-container  {
+.right-inner-container {
     height: 100%;
     flex: 1;
+    display: flex;
 }
 
-.main-page-heading  {
-    margin-left: 20%;
-    margin-top: 15%;
+.main-page-heading {
+    margin-left: 15%;
+    margin-top: 20%;
     // color: #474747;
     // font-size: 50px;
     font-family: gen;
@@ -413,16 +416,81 @@ button:active {
     line-height: 59px;
 }
 
-.fa-less    {
+.fa-less {
     display: none;
 }
 
-@media all and (max-width: 500px)   {
-    .fa-less    {
+@media all and (max-width: 500px) {
+    .fa-less {
         display: block;
     }
-    .fa-more    {
+    .fa-more {
         display: none;
     }
+    .inner-container {
+        flex-direction: column;
+    }
+    .left-inner-container {
+        background-position: 0% 0%;
+    }
+    .right-inner-container {
+        flex: 0;
+    }
 }
+
+.please-line    {
+    position: fixed;
+    left: 60%;
+    display: flex;
+    width: 700px;
+    margin-top: 100vh;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+
+}
+
+.please-line-inner1 {
+    flex: 1;
+}
+
+.please-line-inner2 {
+
+    display: flex;
+    flex: 1;
+}
+
+.please-line-inner3 {
+
+    flex: 1;
+}
+
+.please-thin-line   {
+    width: 80%;
+    height: 1px;
+    background: #d1d1d1;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
