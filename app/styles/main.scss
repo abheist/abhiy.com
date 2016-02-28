@@ -28,8 +28,9 @@ body {
 .background-container {
     height: 100vh;
     width: 93%;
-    // position: fixed;
+    position: fixed;
     margin-left: 3.5%;
+    z-index: -999;
 }
 
 .background-container header {
@@ -99,7 +100,7 @@ body {
 .background-container header div:last-child a {
     flex: 1;
     align-self: center;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .background-container section {
@@ -132,7 +133,7 @@ body {
 
 .side-line:first-child a i:hover {
     transform: rotate(90deg);
-    color: #EEEEEE;
+    color: #B3B3B3;
 }
 
 .thin-line {
@@ -140,3 +141,43 @@ body {
     width: 100%;
     background: #EEEEEE;
 }
+
+.me-img {
+    background: url(/images/me5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: 25%;
+}
+
+.please-line    {
+    position: fixed;
+    width: calc(100vh - 40vh);
+    // background: green;
+    text-align: center;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    left: 60%;
+    bottom: 17%;
+    font-size: 16px;
+    color: #989898;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
