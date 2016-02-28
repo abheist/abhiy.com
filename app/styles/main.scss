@@ -6,6 +6,11 @@
     src: url(../fonts/PT_Sans/PT_Sans-Web-Regular.ttf);
 }
 
+@font-face {
+    font-family: gen;
+    src: url(../fonts/Gentium_Book_Basic/GenBkBasR.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -234,6 +239,9 @@ body {
 @media all and (max-width: 500px) {
     .container {
         border: 0;
+        width: 100%;
+        margin: 0px;
+        min-height: 100%;
     }
     .inner-header-3 {
         display: none;
@@ -356,3 +364,65 @@ button:active {
     opacity: 0;
     cursor: default;
 }
+
+
+.inner-container    {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left-inner-container   {
+    height: 100%;
+    flex: 2;
+    background: url(/images/me5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.right-inner-container  {
+    height: 100%;
+    flex: 1;
+}
+
+.main-page-heading  {
+    margin-left: 20%;
+    margin-top: 15%;
+    // color: #474747;
+    // font-size: 50px;
+    font-family: gen;
+    // font-size: 63px;
+    font-style: normal;
+    // font-weight: 400;
+    // line-height: 59px;
+}
+
+.main-page-heading1 {
+    font-size: 40px;
+    color: #9B9B9B;
+    font-weight: 100;
+}
+
+.main-page-heading2 {
+    color: #474747;
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 59px;
+}
+
+.fa-less    {
+    display: none;
+}
+
+@media all and (max-width: 500px)   {
+    .fa-less    {
+        display: block;
+    }
+    .fa-more    {
+        display: none;
+    }
+}
+
