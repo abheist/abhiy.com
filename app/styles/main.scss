@@ -73,16 +73,22 @@ body {
     position: fixed;
     text-align: center;
     width: 100%;
+    z-index: 99;
     background: rgba(255, 212, 0, 0.5);
     height: calc(100% - 70px);
     font-size: 30px;
     display: none;
+    a {
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.09);
+    }
 }
 
 .mob-nav {
     // height: 20%;
     height: 20%;
     width: 100%;
+    z-index: 1000;
     border: 1px solid rgba(216, 83, 72, 0.2);
     display: flex;
 }
@@ -93,28 +99,27 @@ body {
     text-align: right;
 }
 
-.mobile-nav-left1  {
+.mobile-nav-left1 {
     background: url(/images/work.png);
 }
 
-.mobile-nav-left2  {
+.mobile-nav-left2 {
     background: url(/images/about.png);
 }
 
-.mobile-nav-left3  {
+.mobile-nav-left3 {
     background: url(/images/blog.png);
 }
 
-.mobile-nav-left4  {
+.mobile-nav-left4 {
     background: url(/images/resume.png);
 }
 
-.mobile-nav-left5  {
+.mobile-nav-left5 {
     background: url(/images/contact.png);
 }
 
-
-.mobile-nav-left    {
+.mobile-nav-left {
     flex: 3;
     align-self: center;
     text-align: center;
@@ -125,7 +130,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 .mobile-nav-right {
     flex: 5;
     text-align: left;
@@ -134,7 +138,6 @@ body {
 }
 
 .nav-button {
-    z-index: 9999;
     width: 70px;
     height: 70px;
     background: #D85348;
@@ -146,14 +149,8 @@ body {
     text-align: center;
     line-height: 85px;
     color: white;
+    z-index: 9999;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
-}
-
-.mobile-nav {
-    a {
-        color: white;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.09);
-    }
 }
 
 @media all and (max-width: 500px) {
@@ -266,4 +263,96 @@ body {
     .leftAbout1 {
         display: none;
     }
+}
+
+// nav button
+button:focus,
+button:active {
+    outline: none;
+}
+
+// background: #CE4E4E;
+.menu-icon-wrapper {
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // margin: -12px 0px 0px -12px;
+    // width: 34px;
+    // height: 34px;
+    // pointer-events: none;
+    // transition: 0.1s;
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background: #D85348;
+    border-radius: 100%;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999;
+    box-shadow: 0px 0px 50px rgba(255, 0, 0, 0.5);
+    border: 2px solid yellow;
+    display: none;
+}
+
+@media all and (max-width: 500px)   {
+    .menu-icon-wrapper  {
+        display: block;
+    }
+}
+
+.menu-icon-wrapper svg {
+    position: absolute;
+    margin: -15px;
+    transform: scale(0.1);
+    transform-origin: 0 0;
+}
+
+.menu-icon-wrapper svg path {
+    stroke: #fff;
+    stroke-width: 60px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: transparent;
+    transition: stroke-dasharray 0.5s;
+}
+
+.menu-icon-wrapper svg path.path1 {
+    stroke-dashoffset: 5803.15px;
+    stroke-dasharray: 2901.57px, 2981.57px, 240px;
+}
+
+.menu-icon-wrapper svg path.path2 {
+    stroke-dashoffset: 800px;
+    stroke-dasharray: 400px, 480px, 240px;
+}
+
+.menu-icon-wrapper svg path.path3 {
+    stroke-dashoffset: 6993.11px;
+    stroke-dasharray: 3496.56px, 3576.56px, 240px;
+}
+
+.menu-icon-wrapper.open svg path.path1 {
+    stroke-dasharray: 2901.57px, 5258.15px, 240px;
+}
+
+.menu-icon-wrapper.open svg path.path2 {
+    stroke-dasharray: 400px, 600px, 0px;
+}
+
+.menu-icon-wrapper.open svg path.path3 {
+    stroke-dasharray: 3496.56px, 6448.11px, 240px;
+}
+
+.menu-icon-wrapper .menu-icon-trigger {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: auto;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    cursor: default;
 }
