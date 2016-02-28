@@ -2,7 +2,7 @@
 
 ###My portfolio
 
-##Technologies used & thanks to developers
+##Technologies used & thanks to developers of:
 - HTML
 - CSS
 - JavaScript
