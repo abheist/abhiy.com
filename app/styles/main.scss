@@ -36,7 +36,6 @@ body {
 .background-container header {
     height: 70px;
     display: flex;
-    background: #fff;
 }
 
 .flex {
@@ -176,14 +175,12 @@ body {
     margin-left: 65%;
     position: absolute;
     margin-top: 77px;
-    z-index: -99999;
 }
 
 .each-project {
-    // z-index: -99999;
+    background: #fff;
     height: 300px;
     width: 260px;
-    background: #fff;
     margin: 50px auto;
     h4 {
         position: absolute;
@@ -196,12 +193,13 @@ body {
         position: absolute;
         transform: rotate(-90deg);
         margin-left: -91px;
-        margin-top: 160px;
-        width: 260px;
-        text-align: right;
+        margin-top: 133px;
+        width: 300px;
+        text-align: center;
         display: inline-block;
         font-family: gen;
         font-weight: 400;
+        // background: yellow;
         font-size: 30px;
         color: #5d5d5d;
         opacity: 1;
@@ -227,9 +225,13 @@ body {
         height: 200px;
         width: 200px;
         border-radius: 100%;
-        margin-left: 40%;
+        margin-left: 50%;
         margin-top: 25%;
         transition: all 0.9s;
+        text-align: center;
+        line-height: 200px;
+        font-size: 270px;
+        font-family: gen;
     }
 }
 
@@ -259,7 +261,7 @@ body {
         background: #438BBD;
     }
     div {
-        background: url(/images/hel.png);
+        color: #438BBD;
     }
 }
 
@@ -268,4 +270,82 @@ body {
     h4 {
         color: #438BBD;
     }
+    div {
+        color: white;
+    }
 }
+
+
+
+.featured-2 {
+    border: 7px solid #438BBD;
+    transition: all 0.8s;
+    box-shadow: 10px 10px 60px rgba(67, 139, 189, 0.4);
+    h3 {
+        background: #438BBD;
+    }
+    div {
+        // background: url(/images/hel.png);
+        color: #438BBD;
+    }
+}
+
+.featured-2:hover {
+    background: #438BBD;
+    h4 {
+        color: #438BBD;
+    }
+    div {
+        color: white;
+    }
+}
+
+
+.featured-3 {
+    border: 7px solid #438BBD;
+    transition: all 0.8s;
+    box-shadow: 10px 10px 60px rgba(67, 139, 189, 0.4);
+    h3 {
+        background: #438BBD;
+    }
+    div {
+        // background: url(/images/hel.png);
+        color: #438BBD;
+    }
+}
+
+.featured-3:hover {
+    background: #438BBD;
+    h4 {
+        color: #438BBD;
+    }
+    div {
+        color: white;
+    }
+}
+
+
+
+.featured-4 {
+    border: 7px solid #438BBD;
+    transition: all 0.8s;
+    box-shadow: 10px 10px 60px rgba(67, 139, 189, 0.4);
+    h3 {
+        background: #438BBD;
+    }
+    div {
+        // background: url(/images/hel.png);
+        color: #438BBD;
+    }
+}
+
+.featured-4:hover {
+    background: #438BBD;
+    h4 {
+        color: #438BBD;
+    }
+    div {
+        color: white;
+    }
+}
+
