@@ -94,7 +94,7 @@ body {
 }
 
 .abhiy-logo {
-    background: url(/images/abhiy-logo.png);
+    background: url(/images/logo3.png);
     background-position: center;
     background-size: 50px;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ body {
 }
 
 .background-container header div:first-child a:hover {
-    color: #B3B3B3; 
+    color: #B3B3B3;
 }
 
 .background-container section {
@@ -179,15 +179,16 @@ body {
 
 .inner-foreground {
     width: 100%;
+    display: flex;
 }
 
 .featured {
     // background: red;
     // height: 100px;
     width: 400px;
+    flex: 1;
     margin-left: 65%;
     position: absolute;
-    margin-top: 77px;
     z-index: 2;
 }
 
@@ -195,7 +196,9 @@ body {
     background: #fff;
     height: 300px;
     width: 260px;
-    margin: 50px auto;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
     h4 {
         position: absolute;
         font-size: 34px;
@@ -354,6 +357,42 @@ body {
         color: #438BBD;
     }
     div {
+        color: white;
+    }
+}
+
+.page-data {
+    height: 200px;
+    width: 50%;
+    position: fixed;
+    margin-left: 14%;
+    margin-top: 19%;
+    font-family: gen;
+    h2 {
+        font-size: 36px;
+        color: #9B9B9B;
+        font-weight: 100;
+    }
+    h1 {
+        display: block;
+        font-size: 63px;
+        color: #474747;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 59px;
+    }
+    a {
+        margin-top: 17px;
+        display: inline-block;
+        border: 2px solid #5B5B5B;
+        padding: 13px 32px;
+        background: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        color: #5b5b5b;
+        transition: all 0.9s;
+    }
+    a:hover {
+        background: #3b3b3b;
         color: white;
     }
 }
