@@ -141,6 +141,8 @@ body {
     margin-top: calc(100vh - 77px);
 }
 
+
+
 .side-line {
     color: #9B9B9B;
     font-size: 14px;
@@ -198,7 +200,10 @@ body {
 }
 
 .inner-foreground {
-    width: 100%;
+    width: calc(93% - 14px);
+    position: absolute;
+    margin-left: calc(3.5% + 7px);
+    z-index: .2;
     display: flex;
 }
 
@@ -419,7 +424,5 @@ body {
 
 
 .about-inner    {
-    height: 10px;
-    width: 100%;
-    background: red;
+    margin-top: 77px;
 }
