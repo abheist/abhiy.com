@@ -504,23 +504,24 @@ body {
 .all-resume {
     width: 60%;
     min-height: 50px;
-    margin-top: 270px;
+    margin-top: 250px;
+    margin-bottom: 200px;
     margin-left: calc(20%);
     position: absolute;
     background: #F6F6F6;
     box-shadow: 10px 13px 60px 0px rgba(0, 0, 0, 0.18);
 }
 
-.resume-info-sec    {
+.resume-info-sec {
     background: #fff;
-    padding: 20px;
+    padding: 30px 50px;
     display: flex;
     height: 70px;
     font-size: 13px;
     margin-bottom: 5px;
 }
 
-.resume-info-left   {
+.resume-info-left {
     align-self: center;
     flex: 1;
 }
@@ -530,12 +531,114 @@ body {
     font-family: genb;
 }
 
-
-.resume-info-right  {
+.resume-info-right {
     // background: red;
     flex: 1;
     align-self: center;
     text-align: right;
     color: #B6B6B6;
 }
+
+.resume-rest-sec {
+    background: #fff;
+    padding: 50px;
+    font-size: 13px;
+}
+
+.about-intro-sec {
+    // background: red;
+    display: flex;
+    margin-bottom: 70px;
+    // background: blue;
+    .about-left {
+        flex: 1;
+        font-family: genb;
+        font-size: 17px;
+        // background: red;
+    }
+    .about-right {
+        flex: 3;
+    }
+}
+
+
+.my-skills  {
+    display: flex;
+    div {
+        flex: 1;
+    }
+}
+
+.skills-development {
+    h3  {
+        font-family: genb;
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    h5  {
+        font-size: 13px;
+        font-family: sans;
+        font-weight: 100;
+        line-height: 18px;
+    }
+}
+
+.work-each  {
+    margin-bottom: 40px;
+}
+
+.work-desig {
+    display: flex;
+    h4  {
+        flex: 3;
+        font-size: 15px;
+        align-self: center;
+    }
+    h5  {
+        flex: 2;
+        align-self: center;
+        font-size: 13px;
+        text-align: right;
+        color: #B6B6B6;
+        font-weight: 100;
+    }
+}
+
+.work-comp  {
+    font-size: 16px;
+    color: #B6B6B6;
+    line-height: 24px;
+}
+
+.about-right .work-each:last-child  {
+    padding-bottom: 0px;
+    margin-bottom: 0px;   
+}
+
+.education  {
+    .work-each  {
+        margin-bottom: 20px;
+    }
+}
+
+.resume-rest-sec    {
+    .about-intro-sec:last-child {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
