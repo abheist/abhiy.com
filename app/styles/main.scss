@@ -11,6 +11,11 @@
     src: url(../fonts/Gentium_Book_Basic/GenBkBasR.ttf);
 }
 
+@font-face {
+    font-family: genb;
+    src: url(../fonts/Gentium_Book_Basic/GenBkBasB.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -43,10 +48,13 @@ body {
     background: #fff;
     z-index: 9;
     border-bottom: 7px solid #EEEEEE;
-
 }
 
-.a-logo  {
+.resume-header {
+    border-bottom: 7px solid #2E6398;
+}
+
+.a-logo {
     display: inline-block;
     width: 100%;
     height: 70px;
@@ -123,7 +131,7 @@ body {
     color: #B3B3B3;
 }
 
-.background-container section {
+.index-b-section {
     // border: 7px solid #EEEEEE;
     // box-shadow: 0px 0px 5px #EEEEEE;
     height: calc(100vh - 154px);
@@ -201,13 +209,14 @@ body {
 }
 
 .inner-foreground {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    width: calc(93% - 14px);
+    position: absolute;
+    margin-top: 77px;
+    margin-left: calc(3.5% + 7px);
 }
 
-@media all and (max-width: 1200px)   {
-    .inner-foreground   {
+@media all and (max-width: 1200px) {
+    .inner-foreground {
         flex-direction: column;
     }
 }
@@ -428,9 +437,105 @@ body {
     }
 }
 
-
-.about-inner    {
+.about-inner {
     height: 10px;
     width: 100%;
     background: red;
 }
+
+.resume-section {
+    // border: 7px solid #EEEEEE;
+    // box-shadow: 0px 0px 5px #EEEEEE;
+    height: calc(100vh - 154px);
+    margin-top: 77px;
+    position: relative;
+    width: calc(100% - 14px);
+    border-left: 7px solid #2E6398;
+    border-right: 7px solid #2E6398;
+}
+
+.resume-cont {
+    height: 7px;
+    width: 93%;
+    background: #2E6398;
+    position: fixed;
+    z-index: -999999;
+    margin-left: 3.5%;
+    margin-top: calc(100vh - 77px);
+}
+
+.resume-back-fix {
+    margin: 0px auto;
+    width: 100%;
+    position: absolute;
+}
+
+.resume-heading {
+    font-family: genb;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 77px;
+    color: #222;
+}
+
+.download-pdf {
+    display: flex;
+}
+
+.download-pdf h2 {
+    margin: 0px auto;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    color: #979797;
+    border-radius: 5px;
+    padding: 13px 20px;
+    line-height: 15px;
+    font-weight: 100;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+
+.download-pdf h2:hover {
+    border: 1px solid #222;
+    color: #222;
+}
+
+.all-resume {
+    width: 60%;
+    min-height: 50px;
+    margin-top: 270px;
+    margin-left: calc(20%);
+    position: absolute;
+    background: #F6F6F6;
+    box-shadow: 10px 13px 60px 0px rgba(0, 0, 0, 0.18);
+}
+
+.resume-info-sec    {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    height: 70px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.resume-info-left   {
+    align-self: center;
+    flex: 1;
+}
+
+.my-resume-name {
+    font-size: 24px;
+    font-family: genb;
+}
+
+
+.resume-info-right  {
+    // background: red;
+    flex: 1;
+    align-self: center;
+    text-align: right;
+    color: #B6B6B6;
+}
+
