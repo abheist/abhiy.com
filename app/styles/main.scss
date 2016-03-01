@@ -30,16 +30,20 @@ body {
     width: 93%;
     position: fixed;
     margin-left: 3.5%;
-    z-index: 99;
+    // z-index: 99;
 }
 
-.background-container header {
+.main-header {
     height: 70px;
     display: flex;
     position: fixed;
     width: 93%;
-    z-index: 3;
-    background: white;
+    // background: red;
+    margin-left: 3.5%;
+    background: #fff;
+    z-index: 9;
+    border-bottom: 7px solid #EEEEEE;
+
 }
 
 .a-logo  {
@@ -107,7 +111,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.background-container header div:first-child a {
+.main-header div:first-child a {
     flex: 1;
     align-self: center;
     font-size: 13px;
@@ -115,7 +119,7 @@ body {
     color: #9B9B9B;
 }
 
-.background-container header div:first-child a:hover {
+.main-header div:first-child a:hover {
     color: #B3B3B3;
 }
 
@@ -123,10 +127,9 @@ body {
     // border: 7px solid #EEEEEE;
     // box-shadow: 0px 0px 5px #EEEEEE;
     height: calc(100vh - 154px);
-    margin-top: 70px;
+    margin-top: 77px;
     position: relative;
     width: calc(100% - 14px);
-    border-top: 7px solid #EEEEEE;
     border-left: 7px solid #EEEEEE;
     border-right: 7px solid #EEEEEE;
 }
@@ -145,13 +148,13 @@ body {
     color: #9B9B9B;
     font-size: 14px;
     text-align: center;
-    width: calc(100vh - 20px);
-    margin-top: calc(100vh - 90px);
+    width: calc(100vh - 70px);
+    margin-top: calc(100vh - 35px);
     transform: rotate(-90deg);
     transform-origin: 0 0;
-    margin-left: 30px;
+    margin-left: 5%;
     position: fixed;
-    z-index: 20;
+    z-index: 99;
 }
 
 .side-line div:first-child {
@@ -159,12 +162,12 @@ body {
     justify-content: space-around;
 }
 
-.side-line:first-child a i {
+.side-line div:first-child a i {
     transform: rotate(90deg);
     color: #9B9B9B;
 }
 
-.side-line:first-child a i:hover {
+.side-line div:first-child a i:hover {
     transform: rotate(90deg);
     color: #B3B3B3;
 }
@@ -200,16 +203,24 @@ body {
 .inner-foreground {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+}
+
+@media all and (max-width: 1200px)   {
+    .inner-foreground   {
+        flex-direction: column;
+    }
 }
 
 .featured {
     // background: red;
     // height: 100px;
     width: 400px;
-    flex: 1;
+    flex: 9999999;
     margin-left: 65%;
     position: absolute;
     z-index: 2;
+    margin-top: 100px;
 }
 
 .each-project {
